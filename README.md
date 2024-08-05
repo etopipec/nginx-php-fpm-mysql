@@ -7,7 +7,7 @@ docker-compose run composer create-project laravel/laravel .
 
 Run containers
 ```
-docker-compose up -d
+docker-compose up -d nginx
 ```
 
 Down containers
