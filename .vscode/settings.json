@@ -1,0 +1,5 @@
+{
+  "dataworkspace.excludedProjects": [
+    "laravel_db/laravel_db.sqlproj"
+  ]
+}
