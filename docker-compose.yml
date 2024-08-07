@@ -29,12 +29,14 @@ services:
     build:
       context: dockerfiles
       dockerfile: composer.Dockerfile
+    user: "1000:1000"
     volumes:
       - ./src:/var/www/laravel
   artisan:
     build:
       context: dockerfiles
       dockerfile: php.Dockerfile
+    user: "1000:1000"
     volumes:
       - ./src:/var/www/laravel
     entrypoint: [ "php", "/var/www/laravel/artisan" ]
